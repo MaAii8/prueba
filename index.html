@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="Biblioteca" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Biblioteca</a>
+		<a id="Centro de estudio" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school"></i> Centro de estudio</a>
+		<a id="Centro deportivo" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-dumbbell"></i>Centro deportivo</a>
+		<a id="Tareas" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-list-check"></i></i>Tareas</a>
+		<a id="Proyectos" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-bars-progress"></i></i></i>Proyectos</a>
+
+
+	</nav>
+
+
+	<script>
+.
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Home')
+				window.open("https://www.notion.so/30bab9a692654879a106a7186f51c75e", '_blank').focus();
+
+			else if (id == 'Biblioteca')
+				window.open("https://www.notion.so/CENTRO-DE-ESTUDIO-c18c5a6a182144948f86837aadd38d4f", '_blank').focus();
+
+			else if (id == 'Centro deportivo')
+				window.open("https://Centro deportivo.com", '_blank').focus();
+
+			else if (id == 'Tareas')
+				window.open("https://www.notion.so/b75652d9b4134b569da09b189ecbda60", '_blank').focus();
+
+
+			else if (id == 'Proyectos')
+				window.open("https://www.notion.so/f42d0141a4cf4bb188a636d368bbf4e7", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
